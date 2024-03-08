@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Pokemon LeafGreen</title>
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/vincentborrego/assets@main/icons/gen3.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentborrego/assets@main/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="/pokemon/gen3/">Pokemon Ruby</a>
+    <a href="/pokemon/gen3/sapphire">Pokemon Sapphire</a>
+    <a href="/pokemon/gen3/emerald">Pokemon Emerald</a>
+
+    <a href="/pokemon/gen3/firered">Pokemon FireRed</a>
+    <a href="/pokemon/gen3/leafgreen" aria-current="page">Pokemon LeafGreen</a>
+
+    <a href="/">Go Home</a>
+  </nav>
+
+  <div style="width: 100%; height: 610px; max-width: 100%">
+    <div id="game"></div>
+  </div>
+
+  <script type="text/javascript">
+    EJS_player = '#game';
+    EJS_biosUrl = 'https://cdn.jsdelivr.net/gh/vincentborrego/assets@main/bios/gba_bios.bin';
+    EJS_core = 'gba';
+    EJS_color = '#DD7CB1';
+    EJS_gameUrl = 'https://cdn.jsdelivr.net/gh/vincentborrego/assets@main/roms/leafgreen.gba';
+    EJS_pathtodata = '../../data/';
+  </script>
+
+  <script src="../../data/loader.js"></script>
+</body>
+
+</html>
