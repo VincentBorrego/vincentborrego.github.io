@@ -111,8 +111,6 @@
     config.externalFiles = window.EJS_externalFiles;
     config.disableDatabases = window.EJS_disableDatabases;
     config.disableLocalStorage = window.EJS_disableLocalStorage;
-    config.forceLegacyCores = window.EJS_forceLegacyCores;
-    config.noAutoFocus = window.EJS_noAutoFocus;
     
     if (typeof window.EJS_language === "string" && window.EJS_language !== "en-US") {
         try {
@@ -138,15 +136,9 @@
         window.EJS_emulator.on("start", window.EJS_onGameStart);
     }
     if (typeof window.EJS_onLoadState === "function") {
-        window.EJS_emulator.on("loadState", window.EJS_onLoadState);
+        window.EJS_emulator.on("load", window.EJS_onLoadState);
     }
     if (typeof window.EJS_onSaveState === "function") {
-        window.EJS_emulator.on("saveState", window.EJS_onSaveState);
-    }
-    if (typeof window.EJS_onLoadSave === "function") {
-        window.EJS_emulator.on("loadSave", window.EJS_onLoadSave);
-    }
-    if (typeof window.EJS_onSaveSave === "function") {
-        window.EJS_emulator.on("saveSave", window.EJS_onSaveSave);
+        window.EJS_emulator.on("save", window.EJS_onSaveState);
     }
 })();
